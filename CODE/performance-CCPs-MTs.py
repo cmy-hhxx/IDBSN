@@ -19,6 +19,7 @@ def psnr(img1, img2):
     return 20 * math.log10(PIXEL_MAX / math.sqrt(mse))
 
 
+
 def nrmse(img_gt, img2, type="sd"):
     mse = np.mean( (img_gt - img2) ** 2 )
     rmse = math.sqrt(mse)
